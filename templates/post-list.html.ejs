@@ -1,0 +1,11 @@
+<nav>
+  <h2>Posts</h2>
+  <ul>
+  <% posts.forEach(function(post){ %>
+    <li>
+      <a href="/posts/<%= post.id %>">
+        <%= post.title %>
+      </a>
+  <% }); %>
+  </ul>
+</nav>
